@@ -40,6 +40,7 @@ def solinst_df(path_list):
                 dfs.append(new_xle_imp(f))
                 print(counter)
             except:
+                # Fun fact: early versions of Levellogger saved the fixed-width .levs as .xles (this might stil fail).
                 print("Corrupt .xle file found, trying .lev opener")
                 dfs.append(new_lev_imp(f))
                 print(counter)
