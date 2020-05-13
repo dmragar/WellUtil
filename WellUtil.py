@@ -27,6 +27,11 @@ def match_path(rootdir, pattern, remove_comp=False):
     return newlist
 
 def solinst_df(path_list):
+    """
+    Create list of DataFrames from list of filepaths.
+    :param path_list:
+    :return: 
+    """
     dfs = []
     for counter, f in enumerate(path_list):
         if f.endswith('.xle'):
