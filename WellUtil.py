@@ -20,7 +20,7 @@ def match_path(rootdir, pattern, remove_comp=False):
             if os.path.join(root, filename) not in DupList:
                 newlist.append(os.path.join(root, filename))
     print("Duplicates found: " + str(len(DupList)))
-
+    # dup not working, maybe need to have DupList in the loop?
     if remove_comp == True:
         newlist = [k for k in newlist if 'Compensated' not in k]
 
